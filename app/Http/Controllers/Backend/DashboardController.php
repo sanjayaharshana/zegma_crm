@@ -16,12 +16,6 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $post = Post::get()->count();
-        $category = Category::get()->count();
-
-        return view('backend.dashboard',[
-            'post' => $post,
-            'category' => $category
-        ]);
+        return view('backend.dashboard');
     }
 }
